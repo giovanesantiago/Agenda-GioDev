@@ -6,3 +6,38 @@
   margin: auto;
   background-color: #303030;
 }
+
+@media (max-width: 1100px) {
+  .container {
+    width: 60%;
+    
+  }
+}
+
+@media (max-width: 950px) {
+  .container {
+    width: 70%;
+    
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 80%;
+    
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 90%;
+    
+  }
+}
+
+@media (max-width: 620px) {
+  .container {
+    width: 100%;
+    
+  }
+}

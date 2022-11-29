@@ -52,5 +52,60 @@ td{
 .tel{
     min-width: 200px;
 }
+
+@media (max-width: 560px) {
+    .container-topo{
+        text-align: start;
+    }
+    .example-form{
+        width: 60%;
+        margin: 0;
+    }
+  }
+
+  @media (max-width: 510px) {
+    .container-topo{
+        text-align: start;
+    }
+    .example-form{
+        width: 70%;
+        margin: 0;
+    }
+    .tel{
+        min-width: 150px;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .tel{
+        min-width: 120px;
+    }
+
+    .btnAdd{
+        left: 80px;
+    }
+    
+  }
+
+  @media (max-width: 420px) {
+    .tel{
+        min-width: 100px;
+    }
+
+    .btnAdd{
+        left: 40px;
+    }
+
+    .example-form{
+        width: 80%;
+        margin: 0;
+    }
+
+    .example-full-width{
+        width: 50%;
+    }
+    
+  }
+
   
 
