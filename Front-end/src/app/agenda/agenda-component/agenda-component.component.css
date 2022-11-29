@@ -1,0 +1,56 @@
+.container-topo{
+    text-align: center;
+}
+
+form{
+    padding: 20px;
+    max-width: 100%;
+    max-height: 20%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+mat-card{
+font-size: 1.7em;
+}
+
+.btnPesquisar{
+    min-height: 55px;
+    background-color: rgba(0, 0, 0, 0.685);
+}
+.btnAdd{
+    max-height: 55px;
+    left: 100px;
+    background-color: #61dd9fa9;
+}
+
+table {
+    margin: auto;
+    padding: 10px;
+    font-size: 1.7em;
+    border: 1px solid black;
+    width: 70%;
+    
+}
+
+td{
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px;
+    margin-left: 5px;
+}
+  
+.mat-sort-header-container {
+    align-items: center;
+}
+
+.containerTelefones {
+    margin-top: 15px;
+}
+
+.tel{
+    min-width: 200px;
+}
+  
+

@@ -1,0 +1,39 @@
+  <div class="container-contatos">
+    <div class="container-topo">
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label  >Nome :</mat-label>
+          <input [(ngModel)]="pesquisa" name="pesquisa" matInput #message maxlength="256" placeholder="Digite o nome">
+        </mat-form-field>
+        <div class="btnPesquisarContainer" (click)="procurarContato()">
+          <mat-button-toggle class="btnPesquisar" value="blue">
+            <mat-icon aria-hidden="false" aria-label="Example search icon" fontIcon="search"></mat-icon>
+          </mat-button-toggle>
+        </div>
+        <mat-button-toggle class="btnAdd" value="blue" (click)="addContato()">
+          <mat-icon aria-hidden="false" aria-label="Example search icon" fontIcon="add"></mat-icon>
+        </mat-button-toggle>
+      </form>
+      <mat-card>
+        <mat-card-content>
+          <span>{{ contatoPesquisa?.nome }} </span> - <span>{{ contatoPesquisa?.telefone }} </span> 
+          <button (click) = "deleteContato()" *ngIf="contatoPesquisa != null" mat-mini-fab color="warn">X</button>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="containerTelefones">
+      <table matSort (matSortChange)="listaAgenda">
+        <tr>
+          <th mat-sort-header="nome">Nome</th>
+          <th mat-sort-header="telefone">Telefone</th>
+        </tr>
+        <br>
+        <tr *ngFor="let element of  listaAgenda">
+          <td>{{element.nome}}</td>
+          <td class="tel">{{element.telefone}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+    <br>
+    

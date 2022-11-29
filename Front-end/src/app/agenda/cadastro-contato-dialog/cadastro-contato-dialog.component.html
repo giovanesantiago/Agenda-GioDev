@@ -1,0 +1,15 @@
+<h1 mat-dialog-title> Novo Contato :</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Nome</mat-label>
+    <input matInput [(ngModel)]="newNome">
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Telefone</mat-label>
+    <input matInput [(ngModel)]="newTelefone">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="cancel()"> Cancelar </button>
+  <button mat-button (click)="addContato()"> Cadastrar </button>
+</div>
